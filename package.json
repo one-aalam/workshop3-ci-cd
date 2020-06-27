@@ -21,9 +21,11 @@
     "mongoose": "^5.9.20"
   },
   "devDependencies": {
+    "@shelf/jest-mongodb": "^1.1.5",
     "jest": "^26.1.0",
     "jest-junit": "^11.0.1",
     "jest-sonar-reporter": "^2.0.0",
+    "mockingoose": "^2.13.2",
     "sonarqube-scanner": "^2.6.0",
     "supertest": "^4.0.2"
   }
