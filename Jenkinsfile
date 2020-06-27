@@ -12,7 +12,13 @@ pipeline {
             steps {
                 echo 'Testing..'
                 sh 'npm run test'
-                sh 'npm run coverage'
+                sh 'npm run test:coverage'
+            }
+        }
+        stage('Static Analysis') {
+            steps {
+                echo 'Sonaralyzing..'
+                sh 'npm run test:standard'
             }
         }
         stage('Deploy') {
