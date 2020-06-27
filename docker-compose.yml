@@ -1,4 +1,4 @@
-version: 3
+version: "3"
 services:
   mongo:
     image: "mongo:latest"
@@ -9,6 +9,8 @@ services:
       dockerfile: Dockerfile
       context: .
     image: workshop3:1.0
+    # ports:
+    #   - "3000:3000"
     environment:
       - CUSTOMER_SVC_PORT=3000
       - CUSTOMER_DB_URL=mongodb://localhost:27017/customer-db
